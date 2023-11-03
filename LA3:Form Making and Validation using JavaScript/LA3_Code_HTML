@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="sform.css">
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h1>Register Here</h1>
+    <form id="contactForm">
+      <label for="name"><b>Name:</b></label>
+      <input type="text" id="name" name="name" required>
+      <span class="error" id="nameError"></span>
+
+      <label for="email"><b>Email:</b></label>
+      <input type="email" id="email" name="email" required>
+      <span class="error" id="emailError"></span>
+
+      <label for="phone"><b>Phone:</b></label>
+      <input type="text" id="phone" name="phone" required>
+      <span class="error" id="phoneError"></span>
+
+      <label for="password"><b>Password:</b></label>
+      <input type="password" id="password" name="password" required>
+      <span class="error" id="passwordError"></span>
+      
+      <label>
+        <input type="checkbox" id="terms" name="terms">
+        Agree to Terms & Conditions
+      </label>
+      <br>
+      <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+  <script>
+    function validateForm() {
+    document.getElementById('nameError').textContent = '';
+    document.getElementById('emailError').textContent = '';
+    document.getElementById('phoneError').textContent = '';
+    document.getElementById('passwordError').textContent = '';
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const password = document.getElementById("password").value.trim();
+    const terms = document.getElementById('terms').checked;
+    let valid = true;
+    if (name === '') {
+      document.getElementById('nameError').textContent = 'Name is required.';
+      valid = false;
+    }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      document.getElementById('emailError').textContent = 'Invalid email address.';
+      valid = false;
+    }
+    const phoneRegex = /^\d{10}$/;
+    if (!phoneRegex.test(phone)) {
+      document.getElementById('phoneError').textContent = 'Phone number must be 10 digits.';
+      valid = false;
+    }
+    if (password === "") {
+      document.getElementById('passwordError').textContent = 'Please enter a password';
+      valid = false;
+    }
+    if (valid) {
+      const isConfirmed = confirm('Are you sure you want to submit the form?');
+      if (isConfirmed) {
+        const formData = {
+        name,
+        email,
+        phone,
+        password,
+        terms
+      };
+      alert('Form submitted successfully!\n\n' + JSON.stringify(formData,
+      null, 2));
+    }
+  }
+  }
+  </script>
+  </body>
+</html>
