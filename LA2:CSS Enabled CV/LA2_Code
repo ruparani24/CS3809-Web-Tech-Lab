@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Personal CV</title>
+    </head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            }
+    </style>
+    <body style = "background-color:skyblue">
+        <h1>Personal CV</h1>
+        <hr>
+        <h2>Name</h2>
+        <p>G.S. Ruparani</p>
+        <h2>Contact</h2>
+        <p>Email : ruparani21110144@snuchennai.edu.in</p>
+        <p>Phone no : 8825575487</p>
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>Institute</th>
+                <th>Grade</th>
+                <th>Marks</th>
+            </tr>
+            <tr style="color:brown">
+                <td>DAV Girls Senior Secondary School, Gopalapuram</td>
+                <td>LKG to 8th</td>
+                <td>98%</td>
+            </tr>
+            <tr style="color:rgba(220, 143, 20, 0.927)">
+                <td>Maharishi Vidya Mandir, Chetpet</td>
+                <td>9th to !2th</td>
+                <td>91%</td>
+            </tr>
+            <tr style="color:rgba(24, 0, 130, 0.652)">
+                <td>Shiv Nadar University Chennai</td>
+                <td>2021 to present</td>
+                <td>8.4</td>
+            </tr>
+        </table>
+        <h2>Skills</h2>
+        <ol>
+            <li>Python, C</li>
+            <li>AWS</li>
+        </ol>        
+        <h2>Languages</h2>
+        <p>Tamil, English, Hindi</p>
+        <h2>Projects</h2>
+        <p>STIRS Pi Cluster - Actively engaged in web creative design and development, Designing project & planning, Working on designing</p>
+    </body>
+</html>
