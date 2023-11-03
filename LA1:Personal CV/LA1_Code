@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Personal CV</title>
+    </head>
+    <body>
+        <h1>Personal CV</h1>
+        <hr>
+        <h2>Name</h2>
+        <p>G.S. Ruparani</p>
+        <h2>Contact</h2>
+        <p>Email : ruparani21110144@snuchennai.edu.in</p>
+        <p>Phone no : 8825575487</p>
+        <h2>Education</h2>
+        <ul>
+            <li>DAV Girls Senior Secondary School, Gopalapuram - LKG to 8th</li>
+            <li>Maharishi Vidya Mandir, Chetpet - 9th to 12th</li>
+            <li>Shiv Nadar University, Chennai - 2021 to present</li>
+        </ul>
+        <h2>Skills</h2>
+        <ol>
+            <li>Python, C</li>
+            <li>AWS</li>
+        </ol>        
+        <h2>Languages</h2>
+        <p>Tamil, English, Hindi</p>
+        <h2>Projects</h2>
+        <p>STIRS Pi Cluster</p>
+        <p>Actively engaged in web creative design and development, Designing project & planning, Working on designing</p>
+    </body>
+</html>
